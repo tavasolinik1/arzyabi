@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-muted-900 dark:text-gray-100 antialiased;
+}
+
+/* RTL helper: ensure logical paddings in containers */
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Typography tweaks */
+.prose {
+  @apply text-gray-700 dark:text-gray-300;
+}
