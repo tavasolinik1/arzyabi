@@ -1,0 +1,17 @@
+# Dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# Env
+.env
+
+# Prisma
+/prisma/dev.db
+/prisma/*.db-journal
+
+# Misc
+.DS_Store
+*.log
