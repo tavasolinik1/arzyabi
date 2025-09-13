@@ -1,0 +1,27 @@
+/* Global styles and CSS variables layered on top of Tailwind */
+
+@layer base {
+  :root {
+    --brand-primary: 31 41 55; /* slate-800 */
+    --brand-accent: 16 185 129; /* emerald-500 */
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg bg-white shadow-sm border border-slate-200;
+  }
+
+  .container-page {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
